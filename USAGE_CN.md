@@ -444,18 +444,7 @@ ImageNet 仍需手动放置或软链接。部分本地目录数据集和 benchma
 
 不要把数据集、checkpoint、训练日志、生成的 `config.yaml`、TensorBoard 文件或本地 NLTK 数据提交到匿名仓库。
 
-## 七、匿名发布检查
-
-本次清理已移除上传压缩包中发现的机器专属绝对路径。正式发布前还需要检查：
-
-1. Git commit 作者、邮箱及历史记录；
-2. 训练生成的 `config.yaml`、日志、TensorBoard event 文件；
-3. Notebook 输出、模型卡、外部链接及 Demo 访问统计；
-4. 清理后新增加的本地路径和用户名。
-
-`.gitignore` 已忽略常见数据、checkpoint、缓存和实验输出，但不会自动匿名化已有 Git 历史。建议从全新的匿名仓库提交清理后的源码，不要直接推送原个人仓库的 Git 历史。
-
-## 八、参考仓库
+## 七、参考仓库
 
 - [HyCoCLIP](https://github.com/PalAvik/hycoclip)：GRIT 预处理、训练、零样本分类、检索和 WordNet 评测流程。
 - [PHyCLIP](https://github.com/tksmatsubara/PHyCLIP)：依赖安装、配置驱动训练，以及 VL-Checklist / SugarCrepe 评测示例。
