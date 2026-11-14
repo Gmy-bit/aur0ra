@@ -1,0 +1,20 @@
+# Install a CUDA-compatible torch/torchvision build separately from https://pytorch.org/.
+numpy
+Pillow
+timm
+omegaconf
+hydra-core
+loguru
+ftfy
+regex
+wordsegment
+webdataset
+fsspec
+pandas
+tensorflow-datasets
+torchmetrics
+nltk
+networkx
+tqdm
+tensorboard
+PyYAML

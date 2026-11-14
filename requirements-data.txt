@@ -1,0 +1,11 @@
+# Optional data-preparation, benchmark, and analysis dependencies.
+-r requirements.txt
+albumentations
+opencv-python-headless
+gdown
+huggingface_hub
+requests
+kaggle
+scikit-learn
+matplotlib
+seaborn
