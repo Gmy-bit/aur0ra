@@ -448,20 +448,8 @@ ImageNet still needs to be placed or symlinked manually. Some local-folder datas
 
 Do not commit datasets, checkpoints, run logs, generated configs, TensorBoard files, or local NLTK data to the anonymous source repository.
 
-## 6. Anonymity and release hygiene
 
-The source tree has been cleaned of the machine-specific absolute paths found in the supplied archive. Before publishing, also inspect:
-
-- Git commit authors and email addresses (`git log --format=fuller`).
-- Generated `config.yaml`, logs, TensorBoard event files, and experiment outputs.
-- Notebook outputs, model cards, external links, and hosted demo analytics.
-- Any paths or usernames introduced by local modifications after this cleanup.
-
-The `.gitignore` excludes common local datasets, checkpoints, caches, and run outputs. It does not anonymize an existing Git history; publish this cleaned source from a fresh anonymous repository rather than pushing the original personal repository history.
-
-See [`ANONYMITY_AUDIT.md`](ANONYMITY_AUDIT.md) for the cleanup scope and static checks.
-
-## 7. References and implementation lineage
+## 6. References and implementation lineage
 
 The training/evaluation workflow is organized in the style of these public repositories:
 
